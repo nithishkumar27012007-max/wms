@@ -1,0 +1,272 @@
+.dashboard-container {
+    padding: 20px;
+    background: #f5f7fb;
+}
+
+/* KPI GRID */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 11px;
+    margin-top: 20px;
+}
+
+/* Start Total customer pop style */
+.tooltip-card {
+    position: relative;
+}
+
+.tooltip-wrapper {
+    position: relative;
+}
+
+/* Hidden by default */
+.tooltip-box {
+    position: absolute;
+    bottom: 120%;
+    left: 0;
+    background: #ffffff;
+    border: 2px solid black;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Show on hover */
+.tooltip-card:hover .tooltip-box {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* end Total customer pop style */
+
+
+
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.01);
+
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* KPI STYLE */
+.kpi {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    backdrop-filter: blur(14px);
+}
+
+.kpi span {
+    font-size: 28px;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.6));
+}
+
+.kpi h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.kpi p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* ROW LAYOUT */
+.dashboard-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* SALES BOX */
+.sales-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.box {
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Card Styling Upgrade */
+.pie-card {
+    padding: 20px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.pie-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Main layout */
+.pie-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* Left side chart */
+.pie-chart-wrapper {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Right side text */
+.pie-content {
+    width: 45%;
+}
+
+/* Title */
+.pie-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Left Chart */
+.pie-left {
+    width: 60%;
+}
+
+/* Right Legend */
+.pie-right {
+    border: 2px solid red;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* Row: left + right */
+.pie-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* Stats */
+.pie-stats p {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 🔥 Bullet Dots */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.green { background: #22c55e; }
+.red { background: #ef4444; }
+.yellow { background: #f7d21b; }
+
+
+/* TABLE */
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.stock-table th,
+.stock-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.table-container {
+    max-height: 290px;   /* adjust based on 5 rows */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+/* Optional: keep header fixed while scrolling */
+.stock-table thead th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.tabs button {
+    padding: 6px 12px;
+    border: none;
+    background: #eee;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tabs .active {
+    background: #3b82f6;
+    color: white;
+}
+
+select {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+/* SKELETON */
+.skeleton {
+    height: 200px;
+    background: linear-gradient(90deg, #eee, #ddd, #eee);
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200px 0; }
+    100% { background-position: 200px 0; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .dashboard-row {
+        grid-template-columns: 1fr;
+    }
+
+}
