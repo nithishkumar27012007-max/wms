@@ -77,7 +77,7 @@ export default function OrdersReport() {
         if (!fromDate || !toDate) return;
 
         try {
-            const url = `https://underwear-locks-latinas-anonymous.trycloudflare.com/reports/sales?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}&status_filter=${statusFilter}&page=${page}&limit=${limit}`;
+            const url = `https://expand-best-therapist-surgeon.trycloudflare.com/reports/sales?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}&status_filter=${statusFilter}&page=${page}&limit=${limit}`;
             
             const res = await fetch(url,{
                 headers: getAuthHeaders()
@@ -116,7 +116,7 @@ export default function OrdersReport() {
 
     try {
         // 🔥 Fetch ALL data (no pagination)
-        const url = `https://underwear-locks-latinas-anonymous.trycloudflare.com/reports/sales?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}&status_filter=${statusFilter}&page=1&limit=10000`;
+        const url = `https://expand-best-therapist-surgeon.trycloudflare.com/reports/sales?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}&status_filter=${statusFilter}&page=1&limit=10000`;
 
         const res = await fetch(url);
         const result = await res.json();

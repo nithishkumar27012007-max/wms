@@ -13,7 +13,7 @@ const tabs = [
     { label: "Courier", path: "/master/courier" },
 ];
 
-const BASE_URL = "https://underwear-locks-latinas-anonymous.trycloudflare.com";
+const BASE_URL = "https://expand-best-therapist-surgeon.trycloudflare.com";
 
 export default function CartonBox() {
     const [boxes, setBoxes] = useState([]);
@@ -74,7 +74,7 @@ export default function CartonBox() {
         setLoading(true);
         try {
             const res = await fetch(
-                "https://underwear-locks-latinas-anonymous.trycloudflare.com/carton-box-read",
+                "https://expand-best-therapist-surgeon.trycloudflare.com/carton-box-read",
                 {
                     headers: getAuthHeaders()
                 }
@@ -122,7 +122,7 @@ export default function CartonBox() {
         try {
             let res, data;
             if (isUpdating) {
-                res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/carton-box-update/${updateId}`, {
+                res = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/carton-box-update/${updateId}`, {
                     method: "PUT",
                     headers: getAuthHeaders(),
                     body: JSON.stringify(payload)
@@ -139,7 +139,7 @@ export default function CartonBox() {
                 }
 
             } else {
-                res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/carton-box-create", {
+                res = await fetch("https://expand-best-therapist-surgeon.trycloudflare.com/carton-box-create", {
                     method: "POST",
                     headers: getAuthHeaders(),
                     body: JSON.stringify(payload)

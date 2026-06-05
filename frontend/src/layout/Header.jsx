@@ -24,7 +24,7 @@ export default function Header({ toggleSidebar }) {
     try {
 
         await fetch(
-            "https://underwear-locks-latinas-anonymous.trycloudflare.com/logout",
+            "https://expand-best-therapist-surgeon.trycloudflare.com/logout",
             {
                 method: "POST",
 

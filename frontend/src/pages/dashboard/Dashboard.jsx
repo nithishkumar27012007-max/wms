@@ -25,7 +25,7 @@ export default function Dashboard() {
 
     // ================= FETCH SUMMARY =================
     useEffect(() => {
-        fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/dashboard-summary")
+        fetch("https://expand-best-therapist-surgeon.trycloudflare.com/dashboard-summary")
             .then(res => res.json())
             .then(setData);
     }, []);
@@ -34,7 +34,7 @@ export default function Dashboard() {
     useEffect(() => {
         setLoadingChart(true);
 
-        let url = `https://underwear-locks-latinas-anonymous.trycloudflare.com/chart-data?view=${view}`;
+        let url = `https://expand-best-therapist-surgeon.trycloudflare.com/chart-data?view=${view}`;
 
         if (view !== "live") {
             if (year) url += `&year=${year}`;

@@ -76,7 +76,7 @@ export default function InventoryReport() {
     try {
 
         const res = await fetch(
-            `https://underwear-locks-latinas-anonymous.trycloudflare.com/reports/purchase?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}`,
+            `https://expand-best-therapist-surgeon.trycloudflare.com/reports/purchase?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}`,
             {
                 headers: getAuthHeaders()
             }

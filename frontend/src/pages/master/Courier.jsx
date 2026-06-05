@@ -54,7 +54,7 @@ export default function Courier() {
   const fetchCouriers = async () => {
     try {
       const res  = await fetch(
-        "https://underwear-locks-latinas-anonymous.trycloudflare.com/courier-read",
+        "https://expand-best-therapist-surgeon.trycloudflare.com/courier-read",
         {
           headers: getAuthHeaders()
         }
@@ -144,8 +144,8 @@ export default function Courier() {
 
     setLoading(true);
     const url    = isEditing
-      ? `https://underwear-locks-latinas-anonymous.trycloudflare.com/courier-update/${editingId}`
-      : "https://underwear-locks-latinas-anonymous.trycloudflare.com/courier-create";
+      ? `https://expand-best-therapist-surgeon.trycloudflare.com/courier-update/${editingId}`
+      : "https://expand-best-therapist-surgeon.trycloudflare.com/courier-create";
     const method = isEditing ? "PUT" : "POST";
 
     try {

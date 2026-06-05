@@ -6,7 +6,7 @@ export default function ExpiryAlertPopup() {
     const [show, setShow] = useState(false);
 
     useEffect(() => {
-        fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/expiry-alerts")
+        fetch("https://expand-best-therapist-surgeon.trycloudflare.com/expiry-alerts")
             .then(res => res.json())
             .then(data => {
                 if (data.length > 0) {

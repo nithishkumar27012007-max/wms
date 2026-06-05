@@ -49,7 +49,7 @@ export default function Batches() {
         try {
 
             const res = await fetch(
-                "https://underwear-locks-latinas-anonymous.trycloudflare.com/expiry-dashboard",
+                "https://expand-best-therapist-surgeon.trycloudflare.com/expiry-dashboard",
                 {
                     headers: getAuthHeaders()
                 }

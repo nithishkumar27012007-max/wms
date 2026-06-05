@@ -56,7 +56,7 @@ export default function PutAway() {
         try {
 
             const res = await fetch(
-                "https://underwear-locks-latinas-anonymous.trycloudflare.com/putaway-read",
+                "https://expand-best-therapist-surgeon.trycloudflare.com/putaway-read",
                 {
                     headers: getAuthHeaders()
                 }
@@ -83,7 +83,7 @@ export default function PutAway() {
     };
 
     const loadLocations = async (task_id) => {
-        const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/putaway-locations/${task_id}`);
+        const res = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/putaway-locations/${task_id}`);
         const data = await res.json();
 
         if (!res.ok) {
@@ -129,7 +129,7 @@ export default function PutAway() {
         }
 
         try {
-            const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/putaway-max-qty/${task.task_id}`);
+            const res = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/putaway-max-qty/${task.task_id}`);
             const data = await res.json();
 
             const locationMax = getSelectedFitQty(task.task_id);
@@ -160,7 +160,7 @@ export default function PutAway() {
 
         try {
             const res = await fetch(
-                `https://underwear-locks-latinas-anonymous.trycloudflare.com/putaway-confirm/${task.task_id}`,
+                `https://expand-best-therapist-surgeon.trycloudflare.com/putaway-confirm/${task.task_id}`,
                 {
                     method: "POST",
                     headers: getAuthHeaders(),

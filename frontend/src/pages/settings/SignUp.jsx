@@ -36,14 +36,14 @@ export default function SignUp() {
         const [usersRes, vendorsRes] = await Promise.all([
 
             axios.get(
-                "https://underwear-locks-latinas-anonymous.trycloudflare.com/users",
+                "https://expand-best-therapist-surgeon.trycloudflare.com/users",
                 {
                     headers: getAuthHeaders()
                 }
             ),
 
             axios.get(
-                "https://underwear-locks-latinas-anonymous.trycloudflare.com/vendors-dropdown",
+                "https://expand-best-therapist-surgeon.trycloudflare.com/vendors-dropdown",
                 {
                     headers: getAuthHeaders()
                 }
@@ -68,7 +68,7 @@ export default function SignUp() {
 
     const fetchUsers = async () => {
         try {
-            const res = await axios.get("https://underwear-locks-latinas-anonymous.trycloudflare.com/users",
+            const res = await axios.get("https://expand-best-therapist-surgeon.trycloudflare.com/users",
                 {
                     headers: getAuthHeaders()
                 }
@@ -115,7 +115,7 @@ export default function SignUp() {
     try {
 
         await axios.post(
-            "https://underwear-locks-latinas-anonymous.trycloudflare.com/signup",
+            "https://expand-best-therapist-surgeon.trycloudflare.com/signup",
             form,
             {
                 headers: getAuthHeaders()
@@ -165,7 +165,7 @@ export default function SignUp() {
     // 🔹 Save Update (ROLE + ACTIVE)
     const handleSave = async (u) => {
         try {
-            await axios.put(`https://underwear-locks-latinas-anonymous.trycloudflare.com/users/${u.id}`, {
+            await axios.put(`https://expand-best-therapist-surgeon.trycloudflare.com/users/${u.id}`, {
                 role: u.role,
                 is_active: u.is_active
             });
@@ -183,7 +183,7 @@ export default function SignUp() {
         }
 
         try {
-            await axios.put(`https://underwear-locks-latinas-anonymous.trycloudflare.com/users/${resetUserId}`, {
+            await axios.put(`https://expand-best-therapist-surgeon.trycloudflare.com/users/${resetUserId}`, {
                 new_password: newPassword
             });
 

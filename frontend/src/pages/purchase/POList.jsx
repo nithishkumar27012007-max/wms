@@ -31,7 +31,7 @@ export default function POList() {
 
   const fetchProductsDropdown = async () => {
     try {
-      const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/products-dropdown");
+      const res = await fetch("https://expand-best-therapist-surgeon.trycloudflare.com/products-dropdown");
       if (res.ok) setProducts(await res.json());
     } catch (e) {
       console.error(e);
@@ -40,7 +40,7 @@ export default function POList() {
 
   const fetchVendorsDropdown = async () => {
     try {
-      const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/vendors-dropdown");
+      const res = await fetch("https://expand-best-therapist-surgeon.trycloudflare.com/vendors-dropdown");
       if (res.ok) setVendors(await res.json());
     } catch (e) {
       console.error(e);
@@ -49,7 +49,7 @@ export default function POList() {
 
   const loadPurchaseOrders = async () => {
     try {
-      const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/purchase-order-read", {
+      const res = await fetch("https://expand-best-therapist-surgeon.trycloudflare.com/purchase-order-read", {
         headers: getAuthHeaders()
       });
       if (res.status === 401) {
@@ -117,7 +117,7 @@ export default function POList() {
     };
 
     try {
-      const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/purchase-order-create", {
+      const res = await fetch("https://expand-best-therapist-surgeon.trycloudflare.com/purchase-order-create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -160,7 +160,7 @@ export default function POList() {
       const payload = {
         request_id : crypto.randomUUID()
       }
-      const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/purchase-order-cancel/${id}`, {
+      const res = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/purchase-order-cancel/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type":"application/json",
@@ -194,7 +194,7 @@ export default function POList() {
 
   const handleRecheck = async (po_id) => {
     try {
-      const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/purchase-order-recheck/${po_id}`, {
+      const res = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/purchase-order-recheck/${po_id}`, {
         headers: getAuthHeaders()
       });
 
@@ -231,7 +231,7 @@ export default function POList() {
     if (!window.confirm("Are you sure you want to cancel this auto-created PO?")) return;
 
     try {
-      const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/purchase-order-auto-cancel/${po_id}`, {
+      const res = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/purchase-order-auto-cancel/${po_id}`, {
         method: "PUT",
         headers: getAuthHeaders()
       });
@@ -313,7 +313,7 @@ export default function POList() {
         lines: lines.map(l => ({ product_id: l.product_id, ordered_qty: parseFloat(l.ordered_qty) }))
       };
       
-      const updateRes = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/purchase-order-update/${po_id}`, {
+      const updateRes = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/purchase-order-update/${po_id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -339,7 +339,7 @@ export default function POList() {
       }
 
       // 2. Trigger Action
-      const actionRes = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/purchase-order-${actionType}/${po_id}`, {
+      const actionRes = await fetch(`https://expand-best-therapist-surgeon.trycloudflare.com/purchase-order-${actionType}/${po_id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
