@@ -76,7 +76,7 @@ export default function StockOverview() {
         try {
 
             const res = await fetch(
-                "http://localhost:8000/inventory-dashboard",
+                "https://underwear-locks-latinas-anonymous.trycloudflare.com/inventory-dashboard",
                 {
                     headers: getAuthHeaders()
                 }

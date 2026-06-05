@@ -79,7 +79,7 @@ export default function Vendors() {
     const loadVendors = async () => {
         try {
             const res = await fetch(
-                "http://127.0.0.1:8000/vendors-read",
+                "https://underwear-locks-latinas-anonymous.trycloudflare.com/vendors-read",
                 {
                     headers: getAuthHeaders()
                 }
@@ -138,7 +138,7 @@ export default function Vendors() {
             let res, data;
 
             if (isUpdating) {
-                res = await fetch(`http://127.0.0.1:8000/vendors-update/${updateId}`, {
+                res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/vendors-update/${updateId}`, {
                     method: "PUT",
                     headers: getAuthHeaders(),
                     body: JSON.stringify(payload)
@@ -154,7 +154,7 @@ export default function Vendors() {
                     return;
                 }
             } else {
-                res = await fetch("http://127.0.0.1:8000/vendors-create", {
+                res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/vendors-create", {
                     method: "POST",
                     headers: getAuthHeaders(),
                     body: JSON.stringify(payload)

@@ -24,7 +24,7 @@ export default function Header({ toggleSidebar }) {
     try {
 
         await fetch(
-            "http://localhost:8000/logout",
+            "https://underwear-locks-latinas-anonymous.trycloudflare.com/logout",
             {
                 method: "POST",
 

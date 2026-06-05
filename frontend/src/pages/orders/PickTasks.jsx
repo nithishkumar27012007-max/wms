@@ -5,7 +5,7 @@ import { format } from "date-fns";
 import { jwtDecode } from "jwt-decode";
 import { getAuthHeaders } from "../../utils/authHeaders";
 
-const API = "http://localhost:8000";
+const API = "https://underwear-locks-latinas-anonymous.trycloudflare.com";
 
 const getRoleTabs = () => {
   const token = localStorage.getItem("token");

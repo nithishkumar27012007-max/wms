@@ -38,7 +38,7 @@ export default function Customers() {
     const loadCustomers = async () => {
         try {
             const res = await fetch(
-                "http://127.0.0.1:8000/customers-read",
+                "https://underwear-locks-latinas-anonymous.trycloudflare.com/customers-read",
                 {
                     headers: getAuthHeaders()
                 }
@@ -79,7 +79,7 @@ export default function Customers() {
     console.log(form);
 
     const res = await fetch(
-        "http://127.0.0.1:8000/customers-create",
+        "https://underwear-locks-latinas-anonymous.trycloudflare.com/customers-create",
         {
             method: "POST",
             headers: getAuthHeaders(),
@@ -114,7 +114,7 @@ export default function Customers() {
     // UPDATE CUSTOMER
     const updateCustomer = async () => {
 
-        const res = await fetch(`http://127.0.0.1:8000/customers-update/${selectedId}`, {
+        const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/customers-update/${selectedId}`, {
             method: "PUT",
             headers: getAuthHeaders(),
             body: JSON.stringify(form)

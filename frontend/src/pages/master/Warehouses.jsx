@@ -111,7 +111,7 @@ export default function Warehouses() {
     try {
 
       const res = await fetch(
-        "http://localhost:8000/warehouse-read",
+        "https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse-read",
         {
           headers: getAuthHeaders()
         }
@@ -143,7 +143,7 @@ export default function Warehouses() {
     try {
 
       const res = await fetch(
-        "http://localhost:8000/warehouse_ID-read",
+        "https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse_ID-read",
         {
           headers: getAuthHeaders()
         }
@@ -177,7 +177,7 @@ export default function Warehouses() {
     try {
 
       const res = await fetch(
-        "http://localhost:8000/warehouse-storage-read",
+        "https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse-storage-read",
         {
           headers: getAuthHeaders()
         }
@@ -281,8 +281,8 @@ export default function Warehouses() {
     }
     try {
       const url = isEditing
-        ? `http://localhost:8000/warehouse-update/${originalID}`
-        : "http://localhost:8000/warehouse-create";
+        ? `https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse-update/${originalID}`
+        : "https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse-create";
       const res = await fetch(url, {
         method: isEditing ? "PUT" : "POST",
         headers: getAuthHeaders(),
@@ -358,8 +358,8 @@ export default function Warehouses() {
 
     try {
       const url = isStorageEditing
-        ? `http://localhost:8000/warehouse-storage-update/${originalStorageID}`
-        : "http://localhost:8000/warehouse-storage-create";
+        ? `https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse-storage-update/${originalStorageID}`
+        : "https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse-storage-create";
 
       const payload = {
         ...storageForm,

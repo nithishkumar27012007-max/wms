@@ -15,7 +15,7 @@ export default function Login() {
 
     try {
 
-        const res = await fetch("http://localhost:8000/login", {
+        const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

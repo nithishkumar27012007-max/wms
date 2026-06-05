@@ -22,7 +22,7 @@ export default function VendorPOList() {
     const fetchPOs = async () => {
         setLoading(true);
         try {
-            const res = await axios.get('http://localhost:8000/vendor/pos', {
+            const res = await axios.get('https://underwear-locks-latinas-anonymous.trycloudflare.com/vendor/pos', {
                 headers: getAuthHeaders()
             });
             setPos(Array.isArray(res.data) ? res.data : []);
@@ -71,7 +71,7 @@ export default function VendorPOList() {
                 dispatch_note: form.dispatch_note || null,
                 vehicle_number: form.vehicle_number || null
             };
-            await axios.put(`http://localhost:8000/vendor/po-activity/${selectedPO.purchase_order_id}`, payload, {
+            await axios.put(`https://underwear-locks-latinas-anonymous.trycloudflare.com/vendor/po-activity/${selectedPO.purchase_order_id}`, payload, {
                 headers: getAuthHeaders()
             });
             alert('Activity updated successfully');

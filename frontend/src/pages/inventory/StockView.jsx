@@ -55,8 +55,8 @@ export default function StockView() {
     try {
       const headers = getAuthHeaders();
       const [balancesRes, productsRes] = await Promise.all([
-        fetch("http://127.0.0.1:8000/stock-balances-read", { headers }),
-        fetch("http://127.0.0.1:8000/products-read", { headers })
+        fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/stock-balances-read", { headers }),
+        fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/products-read", { headers })
       ]);
 
       if (balancesRes.status === 401 || productsRes.status === 401) {

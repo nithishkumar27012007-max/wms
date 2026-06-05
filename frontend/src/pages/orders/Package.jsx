@@ -6,7 +6,7 @@ import axios from "axios";
 import { format } from "date-fns";
 import { getAuthHeaders } from "../../utils/authHeaders";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://underwear-locks-latinas-anonymous.trycloudflare.com";
 
 const getRoleTabs = () => {
   const token = localStorage.getItem("token");

@@ -107,7 +107,7 @@ export default function GRN() {
 
   const fetchNextGateEntry = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/next-gate-entry", {
+      const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/next-gate-entry", {
         headers: getAuthHeaders()
       });
       const data = await res.json();
@@ -121,7 +121,7 @@ export default function GRN() {
 
   const fetchWarehouses = async (poId) => {
     if (!poId) return;
-    const res = await fetch(`http://127.0.0.1:8000/warehouse-dropdown/${poId}`, {
+    const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/warehouse-dropdown/${poId}`, {
       headers: getAuthHeaders()
     });
     // Auto logout if session expired
@@ -144,7 +144,7 @@ export default function GRN() {
 
   const fetchDocks = async (warehouseId) => {
     if (!warehouseId) return;
-    const res = await fetch(`http://127.0.0.1:8000/dock-location-dropdown/${warehouseId}`, {
+    const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/dock-location-dropdown/${warehouseId}`, {
       headers: getAuthHeaders()
     });
     const data = await res.json();
@@ -156,7 +156,7 @@ export default function GRN() {
   };
 
   const fetchDropdownData = async () => {
-    const res = await fetch("http://127.0.0.1:8000/goods-receipts-dropdown", {
+    const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/goods-receipts-dropdown", {
       headers: getAuthHeaders()
     });
     const data = await res.json();
@@ -172,7 +172,7 @@ export default function GRN() {
     try {
 
       const res = await fetch(
-        "http://127.0.0.1:8000/goods-receipts-read",
+        "https://underwear-locks-latinas-anonymous.trycloudflare.com/goods-receipts-read",
         {
           headers: getAuthHeaders()
         }
@@ -204,7 +204,7 @@ export default function GRN() {
     try {
 
       const res = await fetch(
-        "http://127.0.0.1:8000/grn-items-read",
+        "https://underwear-locks-latinas-anonymous.trycloudflare.com/grn-items-read",
         {
           headers: getAuthHeaders()
         }
@@ -232,7 +232,7 @@ export default function GRN() {
   };
 
   const fetchItemDropdowns = async () => {
-    const res = await fetch("http://127.0.0.1:8000/grn-dropdown", {
+    const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/grn-dropdown", {
       headers: getAuthHeaders()
     });
     const data = await res.json();
@@ -320,7 +320,7 @@ export default function GRN() {
 
       if (value) {
         try {
-          const res = await fetch(`http://127.0.0.1:8000/check-expiry/${value}`, {
+          const res = await fetch(`https://underwear-locks-latinas-anonymous.trycloudflare.com/check-expiry/${value}`, {
             headers: getAuthHeaders()
           });
           const data = await res.json();
@@ -419,7 +419,7 @@ export default function GRN() {
       return;
     }
 
-    const response = await fetch("http://127.0.0.1:8000/goods-receipts-create", {
+    const response = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/goods-receipts-create", {
       method: "POST",
       headers: getAuthHeaders(),
       body: JSON.stringify({
@@ -534,7 +534,7 @@ export default function GRN() {
       }))
     };
 
-    const response = await fetch("http://127.0.0.1:8000/grn-items-create-bulk", {
+    const response = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/grn-items-create-bulk", {
       method: "POST",
       headers: getAuthHeaders(),
       body: JSON.stringify(payload)

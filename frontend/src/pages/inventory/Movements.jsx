@@ -91,7 +91,7 @@ export default function Movements() {
   const fetchProducts = async () => {
     try {
       const res = await axios.get(
-        "http://127.0.0.1:8000/products-dropdown",
+        "https://underwear-locks-latinas-anonymous.trycloudflare.com/products-dropdown",
         {
           headers: getAuthHeaders()
         }
@@ -113,7 +113,7 @@ export default function Movements() {
     setLoading(true);
 
     const res = await axios.get(
-      "http://127.0.0.1:8000/stock-ledger-read",
+      "https://underwear-locks-latinas-anonymous.trycloudflare.com/stock-ledger-read",
       {
         headers: getAuthHeaders()
       }

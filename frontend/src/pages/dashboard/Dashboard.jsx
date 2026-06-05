@@ -25,7 +25,7 @@ export default function Dashboard() {
 
     // ================= FETCH SUMMARY =================
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/dashboard-summary")
+        fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/dashboard-summary")
             .then(res => res.json())
             .then(setData);
     }, []);
@@ -34,7 +34,7 @@ export default function Dashboard() {
     useEffect(() => {
         setLoadingChart(true);
 
-        let url = `http://127.0.0.1:8000/chart-data?view=${view}`;
+        let url = `https://underwear-locks-latinas-anonymous.trycloudflare.com/chart-data?view=${view}`;
 
         if (view !== "live") {
             if (year) url += `&year=${year}`;

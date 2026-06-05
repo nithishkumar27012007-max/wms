@@ -40,7 +40,7 @@ export default function Products() {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch("http://localhost:8000/products-read", {
+      const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/products-read", {
         headers: getAuthHeaders(),
       });
       if (res.status === 401) {
@@ -58,7 +58,7 @@ export default function Products() {
 
   const fetchCartonBoxes = async () => {
     try {
-      const res = await fetch("http://localhost:8000/carton-box-dropdown", {
+      const res = await fetch("https://underwear-locks-latinas-anonymous.trycloudflare.com/carton-box-dropdown", {
         headers: getAuthHeaders(),
       });
 
@@ -163,8 +163,8 @@ export default function Products() {
     }
 
     const url = isEditing
-      ? `http://localhost:8000/products-update/${editingId}`
-      : "http://localhost:8000/products-create";
+      ? `https://underwear-locks-latinas-anonymous.trycloudflare.com/products-update/${editingId}`
+      : "https://underwear-locks-latinas-anonymous.trycloudflare.com/products-create";
     const method = isEditing ? "PUT" : "POST";
 
     try {

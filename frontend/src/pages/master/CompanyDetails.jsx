@@ -3,7 +3,7 @@ import PageHeader from "../../components/PageHeader";
 import TopTabNav from "../../components/TopTabNav";
 import { getAuthHeaders } from "../../utils/authHeaders";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://underwear-locks-latinas-anonymous.trycloudflare.com";
 
 const tabs = [
   { label: "Company Details", path: "/master/company-details" },

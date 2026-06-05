@@ -76,7 +76,7 @@ export default function InventoryReport() {
     try {
 
         const res = await fetch(
-            `http://127.0.0.1:8000/reports/purchase?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}`,
+            `https://underwear-locks-latinas-anonymous.trycloudflare.com/reports/purchase?from_date=${fromDate}&to_date=${toDate}&filter_type=${filterType}`,
             {
                 headers: getAuthHeaders()
             }

@@ -36,14 +36,14 @@ export default function SignUp() {
         const [usersRes, vendorsRes] = await Promise.all([
 
             axios.get(
-                "http://localhost:8000/users",
+                "https://underwear-locks-latinas-anonymous.trycloudflare.com/users",
                 {
                     headers: getAuthHeaders()
                 }
             ),
 
             axios.get(
-                "http://localhost:8000/vendors-dropdown",
+                "https://underwear-locks-latinas-anonymous.trycloudflare.com/vendors-dropdown",
                 {
                     headers: getAuthHeaders()
                 }
@@ -68,7 +68,7 @@ export default function SignUp() {
 
     const fetchUsers = async () => {
         try {
-            const res = await axios.get("http://localhost:8000/users",
+            const res = await axios.get("https://underwear-locks-latinas-anonymous.trycloudflare.com/users",
                 {
                     headers: getAuthHeaders()
                 }
@@ -115,7 +115,7 @@ export default function SignUp() {
     try {
 
         await axios.post(
-            "http://localhost:8000/signup",
+            "https://underwear-locks-latinas-anonymous.trycloudflare.com/signup",
             form,
             {
                 headers: getAuthHeaders()
@@ -165,7 +165,7 @@ export default function SignUp() {
     // 🔹 Save Update (ROLE + ACTIVE)
     const handleSave = async (u) => {
         try {
-            await axios.put(`http://localhost:8000/users/${u.id}`, {
+            await axios.put(`https://underwear-locks-latinas-anonymous.trycloudflare.com/users/${u.id}`, {
                 role: u.role,
                 is_active: u.is_active
             });
@@ -183,7 +183,7 @@ export default function SignUp() {
         }
 
         try {
-            await axios.put(`http://localhost:8000/users/${resetUserId}`, {
+            await axios.put(`https://underwear-locks-latinas-anonymous.trycloudflare.com/users/${resetUserId}`, {
                 new_password: newPassword
             });
 
